@@ -9,7 +9,7 @@ class Futbolista(Persona, Deportista):
         self._piernaHabil = piernaHabil
         Persona.__init__(self,nombre,edad,altura,sexo)
         Deportista.__init__(self,"Futbol", añosParticipando)
-        Futbolista._listaFutbolistas += self
+        Futbolista._listaFutbolistas.append(self)
 
     def getGolesMarcados(self):
         return self._golesMarcados
