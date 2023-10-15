@@ -7,8 +7,8 @@ class Futbolista(Persona, Deportista):
         self._golesMarcados = golesMarcados
         self._tarjetasRojas = tarjetasRojas
         self._piernaHabil = piernaHabil
-        Persona.__init__(nombre,edad,altura,sexo)
-        Deportista.__init__("Futbol", añosParticipando)
+        Persona.__init__(self,nombre,edad,altura,sexo)
+        Deportista.__init__(self,"Futbol", añosParticipando)
         Futbolista._listaFutbolistas += self
 
     def getGolesMarcados(self):
